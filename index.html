@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <img src="images/myimage.jpeg" alt="myimage" />
+        <div class="nav-part2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact me</a></li>
+            <i class="ri-menu-line"></i>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left">
+          <h1>
+            Hi, My name is
+            <span class="name-color">
+              Muhammad <br />
+              Asad
+            </span>
+            and I am a Passionate <br />
+            <span id="element"></span>
+          </h1>
+          <button class="btn">Explore Now</button>
+        </div>
+        <div class="right">
+          <img src="images/coding.png" alt="Coding cheracter" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Web Designer",
+          "Video Editor",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

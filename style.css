@@ -1,0 +1,177 @@
+@font-face {
+  font-family: poppins;
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  font-family: "poppins";
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  border-bottom: 2px solid #dadada;
+  background-color: rgb(18, 18, 62);
+}
+
+.nav img {
+  width: 3.6vw;
+  height: 3.6vw;
+  border-radius: 50%;
+}
+
+.nav-part2 ul {
+  display: flex;
+  gap: 4vw;
+}
+
+.nav-part2 ul li {
+  list-style: none;
+}
+
+.nav-part2 ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3vw;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.nav-part2 ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.32vw;
+}
+
+.nav ul i {
+  font-size: 1.7vw;
+  font-weight: 600;
+  display: none;
+}
+
+.content {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  position: relative;
+  background-color: rgb(0, 0, 33);
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.left h1 {
+  margin-top: 9.5rem;
+  margin-left: 8rem;
+}
+
+#element {
+  color: rgb(170, 107, 228);
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+}
+
+.right img {
+  width: 65%;
+  margin-left: 8rem;
+  margin-top: -1rem;
+}
+
+.name-color {
+  color: rgb(170, 107, 228);
+}
+
+.btn {
+  background-color: rgb(170, 107, 228);
+  width: 8rem;
+  height: 2.3rem;
+  outline: none;
+  border: none;
+  border: 2px solid #dadada;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 580;
+  margin-left: 8.1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 55px;
+    padding: 0 5vw;
+    border-bottom: 1px solid #dadada;
+  }
+
+  .nav ul li a {
+    display: none;
+  }
+
+  .nav ul i {
+    display: block;
+    font-size: 6vw;
+    color: #fff;
+  }
+
+  .nav img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .content {
+    height: calc(100vh - 55px);
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    padding: 7vw;
+    height: 50%;
+  }
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+
+  .left h1 {
+    font-size: 6vw;
+    margin: 0px;
+    line-height: 12vw;
+    margin-top: 11vw;
+    word-spacing: 0.2vw;
+  }
+
+  .btn {
+    margin-left: 27vw;
+    width: 7rem;
+    height: 2.1rem;
+  }
+
+  .right img {
+    margin-left: 19vw;
+  }
+}
